@@ -10,6 +10,7 @@ public class Principal {
     public static void main(String... args) throws FileNotFoundException, IOException {
         leituraArquivo(); 
         escritaArquivo();
+        metodoSplit();
     }
 
     private static void leituraArquivo() throws FileNotFoundException, IOException {
@@ -37,4 +38,10 @@ public class Principal {
          bw.write(linha);
          bw.flush(); //commit 
     }
+
+    private static void metodoSplit() {
+        String nomeCompleto = "Eloah Baracho dos Santos";
+        String[] nomes = nomeCompleto.split(" ");
+        System.out.println(nomes[0]);
+}
 }
